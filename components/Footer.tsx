@@ -60,8 +60,8 @@ const StarryNight = () => {
 const AnimatedTitle = () => {
   return (
     <h1 className="text-purple-300 text-5xl font-bold lg:text-6xl mb-4 relative">
-      <span className="absolute inset-0 animate-float">Slanine</span>
-      <span className="relative z-10">Slanine</span>
+      <span className="absolute inset-0 animate-float">TaskVerse</span>
+      <span className="relative z-10">TaskVerse</span>
     </h1>
   );
 };
@@ -98,7 +98,7 @@ const Footer = () => {
               Always helping people through AI tools and developing a fast pace towards a brighter future.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/Rakshit-gen/Slanine" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-300 transition-colors">
+              <a href="https://github.com/Sourabh782" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-300 transition-colors">
                 <GitHubLogoIcon className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>
@@ -117,8 +117,8 @@ const Footer = () => {
             <nav className="flex flex-col space-y-1 text-xs text-gray-400">
               <a className="hover:text-purple-300 transition-colors" href="/">Home</a>
               <a className="hover:text-purple-300 transition-colors" href="/dashboard">Dashboard</a>
-              <a className="hover:text-purple-300 transition-colors" href={"https://rakshit-portfolio-one.vercel.app/"} target="_blank">Other projects</a>
-              <a className="hover:text-purple-300 transition-colors" href={"https://github.com/Rakshit-gen/Slanine"} target="_blank">Contribute</a>
+              <a className="hover:text-purple-300 transition-colors" href={""} target="_blank">Other projects</a>
+              <a className="hover:text-purple-300 transition-colors" href={"https://github.com/Sourabh782"} target="_blank">Contribute</a>
             </nav>
           </div>
           <div>
@@ -143,7 +143,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4 pt-4 border-t border-gray-800">
-          <p className="text-center text-xs text-gray-400">© 2024 Rakshit Sisodiya. All rights reserved.</p>
+          <p className="text-center text-xs text-gray-400">© 2024 GTBIT. All rights reserved.</p>
         </div>
       </div>
     </footer>

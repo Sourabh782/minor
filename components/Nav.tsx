@@ -15,10 +15,10 @@ export function Navbarb() {
             name: "Settings",
             link: "/dashboard/settings",
         },
-        {
-            name: "Pricing",
-            link: "/billing",
-        },
+        // {
+        //     name: "Pricing",
+        //     link: "/billing",
+        // },
     ];
     return (
         <div className="relative  w-full ">

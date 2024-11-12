@@ -60,7 +60,7 @@ export default function Home() {
               <div className="flex md:hidden lg:hidden">
                 <UserButton />
               </div>
-              <Link href={"https://github.com/Rakshit-gen/Slanine"}>
+              <Link href={"https://github.com/Sourabh782"}>
                 <Button name="github" className="bg-transparent text-black hover:bg-slate-300 dark:text-white dark:hover:bg-black">
                   <IconBrandGithub className="z-20" />
                 </Button>
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="min-h-fit mx-auto max-w-screen-xl px-4 py-12 lg:flex lg:items-center">
             <div className="mx-auto max-w-3xl text-center mt-14">
               <h1 className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-400 text-transparent bg-clip-text text-3xl font-extrabold sm:text-5xl z-10">
-                Slanine: Your AI problem solver.
+                TaskVerse AI: Your AI problem solver.
               </h1>
 
               <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed font-superbold">
@@ -106,10 +106,10 @@ export default function Home() {
         <br />
         <br />
 
-        <Pricing />
+        {/* <Pricing /> */}
         
-        <QuizSection/>
-        <MainComponent/>
+        {/* <QuizSection/> */}
+        {/* <MainComponent/> */}
         <div className="dark:bg-black">
         <FAQ/>
         </div>

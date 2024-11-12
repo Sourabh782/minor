@@ -17,8 +17,8 @@ const Header = ({hidden, setHidden}: any) => {
       </div>
       <UserButton />
     
-        <h2 className='hidden sm:flex mt-0.5 bg-blue-500 p-1 rounded-md text-sm text-white px-2 md:block lg:block w-fit h-fit'>🔥 Join Membership for just $7.99/month 🔥
-        </h2>
+        {/* <h2 className='hidden sm:flex mt-0.5 bg-blue-500 p-1 rounded-md text-sm text-white px-2 md:block lg:block w-fit h-fit'>🔥 Join Membership for just $7.99/month 🔥
+        </h2> */}
     </div>
     <div className='pr-3'>
     <ModeToggle />

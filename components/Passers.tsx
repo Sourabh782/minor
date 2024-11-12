@@ -10,23 +10,23 @@ import Link from "next/link";
 const reviews = [
     {
         username: "",
-        body: "Summarize this article Slanine",
+        body: "Summarize this article TaskVerse",
     },
     {
         username: "",
-        body: "Review my resume Slanine",
+        body: "Review my resume TaskVerse",
     },
     {
         username: "",
-        body: "Write my product a tagline Slanine",
+        body: "Write my product a tagline TaskVerse",
     },
     {
         username: "",
-        body: "Do a code review for me Slanine",
+        body: "Do a code review for me TaskVerse",
     },
     {
         username: "",
-        body: "Write me a X post Slanine",
+        body: "Write me a X post TaskVerse",
     },
     {
         username: "",
@@ -61,7 +61,7 @@ export function MarqueeDemo() {
         <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden md:rounded-[300px] bg-transparent">
             <br />
             <div className="text-center text-3xl font-semibold md:text-5xl">
-                Do anything with Slanine
+                Do anything with TaskVerse
             </div>
             <br />
             <p className="md:text-xl">Just ask for it and get your solution.</p>

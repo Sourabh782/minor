@@ -50,7 +50,7 @@ export const UsageTrack = ({ setHidden, hidden }: any) => {
 
   return (
     <div className="">
-      <div className="bg-blue-600 text-white rounded-lg p-3 m-5">
+      {/* <div className="bg-blue-600 text-white rounded-lg p-3 m-5">
         <h2 className="font-medium">Credits</h2>
         <div className="h-2 bg-blue-400 w-full rounded-full mt-3">
           <div
@@ -59,13 +59,13 @@ export const UsageTrack = ({ setHidden, hidden }: any) => {
           ></div>
         </div>
         <h2 className="mt-3 text-sm">{total}/100,000 words</h2>
-      </div>
+      </div> */}
       <div className="p-3">
-        <Link href={"/billing"} onClick={() => setHidden(!hidden)}>
+        {/* <Link href={"/billing"} onClick={() => setHidden(!hidden)}> */}
           <Button name="upgrade" className="w-full bg-black text-white font-semibold text-lg hover:text-black hover:border-2 hover:border-black dark:text-black dark:hover:text-white hover:bg-white dark:bg-white dark:hover:bg-slate-700 transition-colors delay-100">
             Upgrade
           </Button>
-        </Link>
+        {/* </Link> */}
       </div>
       <div className="items-center justify-center m-auto flex"></div>
     </div>

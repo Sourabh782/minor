@@ -74,3 +74,11 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .cl-cardBox{
+    height: 80vh;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }

@@ -12,13 +12,13 @@ const inter = Rajdhani({
   weight: ["300", "400", "600", "700"],
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.slanine.online";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://minor-mu.vercel.app/";
 
 export const metadata: Metadata = {
-  title: "Slanine | Tasks Simplified",
+  title: "TaskVerse",
   description: "Generate anything using Gemini AI",
   openGraph: {
-    title: "Slanine | Tasks Simplified",
+    title: "TaskVerse",
     description:
       "An AI solution for everything, powered by Gemini 1.5 Flash. Uses templates to do all your tasks.",
     url: baseUrl,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Slanine | Tasks Simplified",
+    title: "TaskVerse",
     description:
       "Generate anything using Gemini AI, powered by Gemini 1.5 Flash.",
   },
