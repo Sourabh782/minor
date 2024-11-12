@@ -86,9 +86,9 @@ const Footer = () => {
     }
   };
   return (
-    <footer className="bg-black text-white relative overflow-hidden py-8">
+    <footer className="dark:bg-black dark:text-white relative overflow-hidden py-8">
       <StarryNight />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black"></div>
+      <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-black/70 to-black"></div>
 
       <div className="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
