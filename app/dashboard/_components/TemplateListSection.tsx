@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useMemo } from 'react';
 import Templates from '@/app/(data)/Templates';
 import { Skeleton } from '@/components/ui/skeleton';
+import TemplateCard from './TemplateCard';
 
 export interface TEMPLATE {
   name: string;
@@ -32,7 +33,7 @@ const TemplateSkeleton = () => (
   </div>
 );
 
-const TemplateCard = lazy(() => import('./TemplateCard'));
+// const TemplateCard = lazy(() => import('./TemplateCard'));
 
 const TemplateListSection: React.FC<TemplateListSectionProps> = ({
   userSearchInput,
@@ -74,21 +75,21 @@ const TemplateListSection: React.FC<TemplateListSectionProps> = ({
   }
 
   return (
-    <Suspense
-      fallback={
-        <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
-          {[...Array(6)].map((_, index) => (
-            <TemplateSkeleton key={index} />
-          ))}
-        </div>
-      }
-    >
+    // <Suspense
+    //   fallback={
+    //     <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
+    //       {[...Array(6)].map((_, index) => (
+    //         <TemplateSkeleton key={index} />
+    //       ))}
+    //     </div>
+    //   }
+    // >
+    // </Suspense>
       <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
         {filteredTemplates.map((template) => (
           <TemplateCard key={template.slug} {...template} />
         ))}
       </div>
-    </Suspense>
   );
 };
 

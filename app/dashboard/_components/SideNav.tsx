@@ -19,11 +19,11 @@ const SideNav = ({setHidden, hidden}: any) => {
       icons: LayoutDashboard,
       path: "/dashboard",
     },
-    {
-      name: "History",
-      icons: History,
-      path: "/dashboard/history",
-    },
+    // {
+    //   name: "History",
+    //   icons: History,
+    //   path: "/dashboard/history",
+    // },
     // {
     //   name: "Billing",
     //   icons: Wallet,
@@ -73,9 +73,9 @@ const SideNav = ({setHidden, hidden}: any) => {
           ))}
         </div>
 
-        <div className=" w-[300px] md:w-full mt-auto">
+        {/* <div className=" w-[300px] md:w-full mt-auto">
           <UsageTrack setHidden={setHidden} hidden={hidden} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

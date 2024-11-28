@@ -1,35 +1,14 @@
-import React, { useRef, useState, useEffect }  from 'react'
+import React, { useState }  from 'react'
 import { TEMPLATE } from './TemplateListSection'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const TemplateCard = (item:TEMPLATE) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef<HTMLDivElement | null>(null);
+  const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          // Once visible, disconnect the observer
-          if (ref.current) observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-
-    return () => {
-      // Clean up observer on unmount
-      if (ref.current) observer.disconnect();
-    };
-  }, []);
   return (
     
     <div>
-      <div ref={ref} className={`mx-auto flex h-full w-full max-w-lg items-center outline-none justify-center rounded-xl transition-opacity duration-500 transform ${
+      <div className={`mx-auto flex h-full w-full max-w-lg items-center outline-none justify-center rounded-xl transition-opacity duration-500 transform ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
       }`}>
         {isVisible ? <div

@@ -1,8 +1,13 @@
-/** @type { import("drizzle-kit").Config } */
-export default {
+import { config } from 'dotenv';
+import { defineConfig } from "drizzle-kit";
+
+config({ path: '.env' });
+
+export default defineConfig({
   schema: "./utils/schema.tsx",
+  out: "./migrations",
   dialect: "postgresql",
   dbCredentials: {
-    url: process.env.NEXT_PUBLIC_DRIZZLE_DB_URL,
+    url: process.env.DATABASE_URL,
   },
-};
+});
